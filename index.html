@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SNS Software Solutions - Business & Portfolio Website" />
+  <title>SNS Software Solutions</title>
+  <link rel="icon" type="image/x-icon" href="sns.ico">
+  <style>
+    :root {
+      --primary: #ea6a0a;
+      --secondary: #f9f9f9;
+      --gray: #6e7681;
+      --text-light: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 20px 0;
+    }
+
+    .logo-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-box img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('frontSS.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    #services ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    #services li {
+      background: var(--secondary);
+      padding: 20px;
+      border-left: 5px solid var(--primary);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 5px solid var(--primary);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    #contact p,
+    #contact a {
+      text-align: center;
+      font-size: 1rem;
+      color: var(--gray);
+    }
+
+    #contact a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #222;
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .logo-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container logo-nav">
+      <div class="logo-box">
+        <img src="sns-logo.png" alt="SNS Software Solutions Logo">
+        <div>
+          <h1 style="margin: 0; font-size: 1.5rem;">SNS Software Solutions</h1>
+          <p style="font-size: 0.9rem;">Your Digital Partner in Water Park & POS Solutions</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>We Power Your Business</h2>
+      <p>Expert software development for water parks, POS systems, and custom solutions.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>SNS Software Solutions is committed to delivering innovative, reliable, and tailored software services to businesses across India, especially in the water park and retail industries. With a passion for technology and a focus on results, we bring your vision to life.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>🎢 Water Park Management Software</li>
+        <li>🧾 POS & Billing Software</li>
+        <li>🎯 Inventory & Stock Control</li>
+        <li>📞 24x7 Customer Support</li>
+        <li>🖥️ Software Installation & Training</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="card">
+          <h3>Water Park POS System</h3>
+          <p>Installed at multiple parks in MP.</p>
+        </div>
+        <div class="card">
+          <h3>Retail Billing ERP</h3>
+          <p>Advanced GST-compliant ERP with barcode and inventory.</p>
+        </div>
+        <div class="card">
+          <h3>Support & Training Modules</h3>
+          <p>Remote assistance and AnyDesk training setups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@snssoftwaresolutions.com">info@snssoftwaresolutions.com</a></p>
+      <p>Phone: +91-XXXXXXXXXX</p>
+      <p>Location: Kundli, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SNS Software Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
